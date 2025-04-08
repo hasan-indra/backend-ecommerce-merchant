@@ -12,6 +12,8 @@ This is a backend e-commerce project, part merchant using [Nest](https://github.
 ## How to install
 ```bash
 # clone this project
+$ git clone https://github.com/hasan-indra/backend-ecommerce-merchant.git
+
 # run npm install
 $ npm install
 
