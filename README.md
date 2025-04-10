@@ -6,7 +6,7 @@ This is a backend e-commerce project, part merchant using [Nest](https://github.
 
 ## Feature
 
-1. Product Managemang
+1. Product Management
 2. JWT Auth
 
 ## How to install
@@ -23,6 +23,9 @@ $ docker-compose up -d
 
 # copy env and setup
 $ cp .env.example .env
+
+# run migration
+$ npx prisma migrate dev
 
 ```
 
