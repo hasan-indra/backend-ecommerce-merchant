@@ -14,16 +14,14 @@ datasource db {
 }
 
 
-model User {
-  id          String   @id @default(uuid()) @db.Uuid
-  email       String   @unique
-  firstName   String   @map("first_name")
-  lastName    String   @map("last_name")
-  phoneNumber String   @map("phone_number")
-  password    String
-  isActive    Boolean  @default(false) @map("is_active")
+model Product {
+  id                   String   @id @default(uuid()) @db.Uuid
+  productName          String   @map("product_name")
+  productDescription   String   @map("product_description")
+  productImage         String   @map("product_image")
+  qty                  Int
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-   @@map("users")
+  @@map("products")
 }
